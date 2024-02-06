@@ -18,7 +18,7 @@
         <header role="header">
                 <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-                <img src="Logo.svg" alt="logo" class="logo">
+                <img src="design/Logo.svg" alt="logo" class="logo">
                 <nav class="menu" role="navigation">
                     <div class="header-text">
                         <a href='news.php'>NEWS</a>
@@ -35,20 +35,20 @@
                     </ul>
                 </nav>
         </header>
-        <img class="SENSE" src="THE SENSE.svg" alt="">                  
+        <img class="SENSE" src="design/THE SENSE.svg" alt="">                  
     </div>
     
             <button><a href="">DÉCOUVRIR</a></button>
 
             <div class="DESCRIPTION">
-                <img class="fond" src="Ellipse 36.svg" alt="">
-                <img class="video" src="VIDEO.svg" alt="">
+                <img class="fond" src="design/Ellipse 36.svg" alt="">
+                <img class="video" src="design/VIDEO_a_propos.svg" alt="">
                 <div class="container">
-                    <img src="Polygon 3.svg" alt="Image" onclick="afficherEtLancer()">
+                    <img src="design/Polygon 3.svg" alt="Image" onclick="afficherEtLancer()">
                     <div class="popup" id="popupVideo">
                         <span class="fermer" onclick="fermerPopup()">&times;</span>
                         <video id="videoPlayer" width="1500" height="auto" controls autoplay onended="fermerPopup()">
-                            <source src="Copie de Trailer - The Sense.mp4" type="video/mp4">
+                            <source src="design/Copie de Trailer - The Sense.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la lecture de la vidéo.
                         </video>
                     </div>
@@ -79,25 +79,25 @@
 
                 <div class="Nous">  
                     <div class="Colin">
-                        <img src="image 116.svg" alt="">
+                        <img src="design/image 116.svg" alt="">
                         <p>CORDIER <br><span>Colin</span> </p>
 
                     </div>
 
                     <div class="Thibault">
-                        <img src="image 117.svg" alt="">
+                        <img src="design/image 117.svg" alt="">
                         <p>VANBORRE <br><span>Thibault</span></p>
 
                     </div>
 
                     <div class="Elo">
-                        <img src="image 119.svg" alt="">
+                        <img src="design/image 119.svg" alt="">
                         <p>URBAIN <br><span>Eloëne</span> </p>
 
                     </div>
 
                     <div class="Bryce">
-                        <img src="image 118.svg" alt="">
+                        <img src="design/image 118.svg" alt="">
                         <p>ZAABAT <br><span>Bryce</span></p>
 
                     </div>
@@ -144,9 +144,9 @@
                 </p>
 
                 <div class="Map">
-                    <img src="image 74.svg" alt="">
+                    <img src="design/image 74.svg" alt="">
                     <div class="adresse"><span>207 Rue Duguesclin <br> 69003 Lyon</span></div>
-                    <img class="point" src="image 78.svg" alt="">
+                    <img class="point" src="design/image 78.svg" alt="">
                 </div>
 
                 <div class="horaire">
@@ -221,10 +221,10 @@
 
 
 <div class="TRUCS COOL">
-    <img class="FORME" src="BRYCE FORME.svg" alt="">
-    <img class="Logo1" src="Logo1.svg" alt="">
-    <img class="V37" src="Vector 37.svg" alt="">
-    <img class="V38" src="Vector 38.svg" alt="">
+    <img class="FORME" src="design/fond1.svg" alt="">
+    <img class="Logo1" src="design/Logo1.svg" alt="">
+    <img class="V37" src="design/Vector 37.svg" alt="">
+    <img class="V38" src="design/Vector 38.svg" alt="">
 </div>
 
 <footer>
@@ -241,16 +241,32 @@
                     <a href='Modalites.php' id='Modalités'>Modalités</a>
                     <div class="ligne-verticale-ft"></div>
                     <a href='Confidentialite.php' id='Confidentialité'>Politique de confidentialité</a>
-                    <a href='Youtube.com/The_Sense' id='Youtube'><img src="Youtube.svg" alt="Youtube" class="Yb" id="Yb"></a>
-                    <a href='Instagram.com/The_Sense' id='Insta'><img src="Instagram.svg" alt="Instagram" class="Ig" id="Ig"></a>
-                    <a href='Twiiter.com/The_Sense' id='Twitter'><img src="Twitter.svg" alt="Twitter" class="Tw" id="Tw"></a>
-                    <a href='Faxebook.com/The_Sense' id='Facebook'><img src="Facebook.svg" alt="Facebook" class="Fb" id="Fb"></a>
+                    <a href='Youtube.com/The_Sense' id='Youtube'><img src="design/Youtube.svg" alt="Youtube" class="Yb" id="Yb"></a>
+                    <a href='Instagram.com/The_Sense' id='Insta'><img src="design/Instagram.svg" alt="Instagram" class="Ig" id="Ig"></a>
+                    <a href='Twiiter.com/The_Sense' id='Twitter'><img src="design/Twitter.svg" alt="Twitter" class="Tw" id="Tw"></a>
+                    <a href='Faxebook.com/The_Sense' id='Facebook'><img src="design/Facebook.svg" alt="Facebook" class="Fb" id="Fb"></a>
                 </div>
             </div>
         </div>
 </footer>
     
-    <script src="test.js"></script>
+<script>
+        function afficherEtLancer() {
+    afficherPopup();
+    var videoPlayer = document.getElementById("videoPlayer");
+    videoPlayer.play();
+}
+
+function afficherPopup() {
+    var popup = document.getElementById("popupVideo");
+    popup.style.display = "block";
+}
+
+function fermerPopup() {
+    var popup = document.getElementById("popupVideo");
+    popup.style.display = "none";
+}
+    </script>
 </body>
 
 </html>

@@ -107,7 +107,7 @@ button a
 
 
 body{
-    background-image: url(images/Vector_79.svg);
+    background-image: url(design/Vector_79.svg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -204,7 +204,7 @@ body .DESCRIPTION .container .popup .fermer {
 
 
 body .Partie_Principale{
-    background-image: url(images/Vector_81.svg);
+    background-image: url(design/Vector_81.svg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

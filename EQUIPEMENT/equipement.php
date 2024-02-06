@@ -141,7 +141,28 @@
 
             </div>
 
-            <footer></footer>
+            <footer>
+        <nav class="footer" role="informations">
+        <div class="footer-text">
+            <div class='pages'>
+                    <a href='Contact.php' id='Contact'>Nous contacter</a>
+                    <a href='Reservation.php' id='Reservation'>Réservation</a>
+                    <a href='FAQ.php' id='FAQ'>FAQ</a>
+                </div>
+                <div class='Copyright'>
+                    <p id='Copyright'>© THE SENSE, SAS. Tous droits réservés</p></div>
+                <div class='Regles'>
+                    <a href='Modalites.php' id='Modalités'>Modalités</a>
+                    <div class="ligne-verticale-ft"></div>
+                    <a href='Confidentialite.php' id='Confidentialité'>Politique de confidentialité</a>
+                    <a href='Youtube.com/The_Sense' id='Youtube'><img src="design/Youtube.svg" alt="Youtube" class="Yb" id="Yb"></a>
+                    <a href='Instagram.com/The_Sense' id='Insta'><img src="design/Instagram.svg" alt="Instagram" class="Ig" id="Ig"></a>
+                    <a href='Twiiter.com/The_Sense' id='Twitter'><img src="design/Twitter.svg" alt="Twitter" class="Tw" id="Tw"></a>
+                    <a href='Faxebook.com/The_Sense' id='Facebook'><img src="design/Facebook.svg" alt="Facebook" class="Fb" id="Fb"></a>
+                </div>
+            </div>
+        </div>
+</footer>
     
     <script>
         function afficherEtLancer() {

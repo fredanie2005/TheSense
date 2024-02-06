@@ -14,7 +14,7 @@
             <header role="header">
                 <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
-                <img src="images/Logo.svg" alt="logo" class="logo">
+                <img src="design/Logo.svg" alt="logo" class="logo">
                 <nav class="menu" role="navigation">
                     <div class="header-text">
                         <a href='news.php'>NEWS</a>
@@ -37,7 +37,7 @@
 
 
         <div class="titre">
-            <img src="images/LOGO_ROOM.svg" alt="Logo de l'expérience et au dessus les trois autres expériences en plus petit">
+            <img src="design/LOGO_ROOM.svg" alt="Logo de l'expérience et au dessus les trois autres expériences en plus petit">
         </div> 
         <button><a href="">DÉCOUVRIR</a></button>
 
@@ -48,12 +48,12 @@
 
 
         <div class="DESCRIPTION">
-                <img class="Titre" src="images/TITRE.svg">
-                <img class="titre_logo" src="images/CREATIVE.svg" alt="">
-                <img class="background" src="images/Ellipse_36.svg" alt="">
-                <img class="video" src="images/VIDEO.svg" alt="">
+                <img class="Titre" src="design/TITRE.svg">
+                <img class="titre_logo" src="design/CREATIVE.svg" alt="">
+                <img class="background" src="design/Ellipse_36.svg" alt="">
+                <img class="video" src="design/VIDEO.svg" alt="">
                 <div class="container">
-                    <img src="images/Polygon_3.svg" alt="Image" onclick="afficherEtLancer()">
+                    <img src="design/Polygon_3.svg" alt="Image" onclick="afficherEtLancer()">
                     <div class="popup" id="popupVideo">
                         <span class="fermer" onclick="fermerPopup()">&times;</span>
                         <video id="videoPlayer" width="1500" height="auto" controls autoplay onended="fermerPopup()">
@@ -82,19 +82,19 @@
                 choix à tout moment pour que ceux-ci correspondent à vos besoins.
             </p>
             <div class="DARK_ROOM">
-                <img src="images/image_84.svg" alt="" class="image1">
-                <img src="images/DARK_ROOMdar.svg" alt="" class="logo1">
+                <img src="design/image_84.svg" alt="" class="image1">
+                <img src="design/DARK_ROOMdar.svg" alt="" class="logo1">
             </div>
             
             
             
             <div class="LIGHT_ROOM">
-                <img src="images/image 89img_light.svg" alt="" class="image2">
-                <img src="images/LIGHT_ROOM.svg" alt="" class="logo2">
+                <img src="design/image 89img_light.svg" alt="" class="image2">
+                <img src="design/LIGHT_ROOM.svg" alt="" class="logo2">
             </div>
             
             
-            <img src="images/BATTLE_ROOM.svg" alt="" class="Battle_Room">
+            <img src="design/BATTLE_ROOM.svg" alt="" class="Battle_Room">
             
         </div>    
         
@@ -102,8 +102,8 @@
             <p class="Titre">OU CONFIEZ VOTRE DESTIN AU HASARD</p>
             <p class="Texte">Vous pensez pouvoir tout affronter sans problème, laisser le hasard décider de votre room et choisissez simplement la difficulté. 
             </p>
-            <img src="images/Aléatoire.svg" alt="" class="image">
-            <img src="images/Unionlogo_rand.svg" alt="" class="logo">
+            <img src="design/Aléatoire.svg" alt="" class="image">
+            <img src="design/Unionlogo_rand.svg" alt="" class="logo">
             
         </div>
 
@@ -126,10 +126,10 @@
                 <a href='Modalites.php' id='Modalités'>Modalités</a>
                 <div class="ligne-verticale-ft"></div>
                     <a href='Confidentialite.php' id='Confidentialité'>Politique de confidentialité</a>
-                    <a href='Youtube.com/The_Sense' id='Youtube'><img src="images/Youtube.svg" alt="Youtube" class="Yb" id="Yb"></a>
-                    <a href='Instagram.com/The_Sense' id='Insta'><img src="images/Instagram.svg" alt="Instagram" class="Ig" id="Ig"></a>
-                    <a href='Twiiter.com/The_Sense' id='Twitter'><img src="images/Twitter.svg" alt="Twitter" class="Tw" id="Tw"></a>
-                    <a href='Faxebook.com/The_Sense' id='Facebook'><img src="images/Facebook.svg" alt="Facebook" class="Fb" id="Fb"></a>
+                    <a href='Youtube.com/The_Sense' id='Youtube'><img src="design/Youtube.svg" alt="Youtube" class="Yb" id="Yb"></a>
+                    <a href='Instagram.com/The_Sense' id='Insta'><img src="design/Instagram.svg" alt="Instagram" class="Ig" id="Ig"></a>
+                    <a href='Twiiter.com/The_Sense' id='Twitter'><img src="design/Twitter.svg" alt="Twitter" class="Tw" id="Tw"></a>
+                    <a href='Faxebook.com/The_Sense' id='Facebook'><img src="design/Facebook.svg" alt="Facebook" class="Fb" id="Fb"></a>
                 </div>
             </div>
         </div>

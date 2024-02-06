@@ -28,11 +28,6 @@ body {
     color: #fff;
 }
 
-.home {
-    width: 50px;
-    height: 50px;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -259,7 +254,6 @@ button a
     Height: 622px;
     Top: 100px;
     Left: 1406px;
-    Rotation: -180°;
 }
 
 
@@ -268,7 +262,6 @@ button a
     Height: 622px;
     Top: 100px;
     Left: 1406px;
-    Rotation: -180°;
     border-radius: 10px;
 }
 
@@ -277,8 +270,8 @@ button a
     background-color: #E6E6E6;
     padding: 40px;
     border-radius: 4px;
-    Width: 80%;
-    Height: 80%;
+    Width: 50%;
+    Height: 30%;
 }
 
 .center{
@@ -318,7 +311,6 @@ button a
     Height: 622px;
     Top: 100px;
     Left: 1406px;
-    Rotation: -180°;
     border-radius: 10px;
 }
 
@@ -346,7 +338,6 @@ button a
     Height: 620px;
     Top: 100px;
     Left: 1406px;
-    Rotation: -180°;
     border-radius: 10px;
 }
 
@@ -372,7 +363,6 @@ button a
     Height: 622px;
     Top: 100px;
     Left: 1406px;
-    Rotation: -180°;
     border-radius: 10px;
 }
 
@@ -383,6 +373,105 @@ button a
     float: right;
     color: #9D9D9D;
 }
+
+
+
+
+.reservation{
+    margin-top: 150px;
+    width: 50%;
+    max-width: 80%;
+}
+
+
+
+
+
+
+
+.news{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 8%;
+}
+
+.news .card{
+    Width: 500px;
+    Height: 300px;
+    position: relative;
+    margin: 30px 10px;
+    background: #f0f0f0;
+    padding: 20px 15px;
+    display: flex; /* mode d'affichage*/
+    flex-direction: column; /* gère la disposition des éléments dans le container*/
+    box-shadow: 0,5px 10px #E6E6E6; /* projette une ombre sur un élément*/
+    transition: 0,3s ease-in-out; /* créer une transition */
+    margin-top: 5%;
+}
+
+.news .card .acceuil-image-container2{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    box-shadow: 0 5px 20px rgba (0,0,0,1.2);
+}
+
+.news .card .acceuil-image-container2 img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.acceuil-image-container2 :hover img{
+    transform: scale(1.1);
+}
+
+.Container-text2{
+    text-align: center;
+    background-color: #E6E6E6;
+    padding: 40px;
+    border-radius: 4px;
+    Width: 50%;
+    Height: 30%;
+    margin-top: 18%;
+}
+
+
+
+
+
+.journal{
+
+}
+
+.journal1{
+
+}
+
+.journal2{
+
+}
+.journal3{
+
+}
+.journal4{
+
+}
+.journal5{
+
+}
+.journal6{
+
+}
+
 
 
 

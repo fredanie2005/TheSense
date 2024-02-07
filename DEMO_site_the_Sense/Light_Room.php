@@ -62,7 +62,6 @@
         <p class ="Titre">PRENEZ PART AU VOYAGE</p>
         <img src="design/image_44.svg" alt="image Shangri-La : la cité perdue de Z" class="ImacceuilContainer">
         <div class="center">
-            <div class="Container-text">
                 <p class="Titre1">SHANGRI-LA : LA CITÉ PERDUE DE Z</p>
                 <img src="design/Line_12.svg" alt="" class="Titre2">
                 <p class="Titre3">LIGHT ROOM</p> 
@@ -72,40 +71,50 @@
                     entrez dans la cité de Z avec votre équipe et explorez les lieux à la recherche de Percy Fawcett.
                 </p>
             
-                <a href="reservation.html" class="Bonton-Container"><img src="design/reserv.svg" title="bouton réservation" alt="lien pour une réservation sur le site"></a>
-            </div>
+                <a href="reservation.html" class="Bouton-Container"><img src="design/reserv.svg" title="bouton réservation" alt="lien pour une réservation sur le site"></a>
         </div>
         
         <img src="design/image_65.svg" alt="" class="ImacceuilContainer2">
         <div class="center2">
-            <div class="Container-text2">
-                <p class="Titre1">SHANGRI-LA : LA CITÉ PERDUE DE Z | LIGHT ROOM</p>
-                <p class="Titre2">
-                </p>
-                <p class="Titre3"></p>
+            <p class="Titre1">NORDRËNN : LA LÉGENDE DE GLACE</p>
+            <img src="design/Line_12.svg" alt="" class="Titre2">
+            <p class="Titre3">LIGHT ROOM</p> 
+            <p class="text">
+                Dans le froid du royaume de Nordrënn, il est une légende qui raconte comment un guerrier obtint la force de l’ours et la
+                clairvoyance du corbeau. Il est dit que pour conquérir la femme qu’il aimait, cet homme parti à la recherche du trône d’Odin,
+                artefact perdu depuis des années, qui offrait, disait-on, le pouvoir du Père de Toute Chose. Le guerrier parti et ne revint jamais ;
+                on raconte qu’il aurait trouvé le trône mais, qu’avide de son pouvoir il ne le quitta plus. Partez à la découverte du royaume glacé
+                de Nordrënn et retrouvez le guerrier de la légende.
+            </p>
+        
+                
+            <a href="reservation.html" class="Bouton-Container"><img src="design/reserv.svg" title="bouton réservation" alt="lien pour une réservation sur le site"></a>
             
-                <a href="reservation.html" class="Bonton-Container"><img src="design/reserv.svg" title="bouton réservation" alt="lien pour une réservation sur le site"></a>
-                <a href="" alt="lien pour la light room" class="link-container-lightroom" > →→ Découvrez la Light Room →→ </a>
-            </div>
+                
         </div>
     </div>
 
+    <div class="GALERIE">
+                      
+        <div class="C">
+            <p class="com">
+                “C’est dingue, j’ai vraiment eu l’impression d’être transporté dans un autre monde. Avant je ne faisais pas d’expérience VR car je ne croyais pas en la 
+                qualité mais grâce à The Sense, j’ai pu traverser la frontière du réel.”<br>
+                - Denise, 23 Octobre 2020 - 
+            </p> 
+        </div>
+        <img class="Cercle1" src="design/Cercle 1.svg" alt="">
+        <img class="Cercle2" src="design/Cercle 2.svg" alt="">
+
+                    
+        <img class="Rectangle1" src="design/Rectangle_129.svg" alt="">
+        <img class="Rectangle2" src="design/Rectangle_129.svg" alt="">
+        <img class="Rectangle3" src="design/Rectangle_129.svg" alt="">
+        <img class="Rectangle4" src="design/Rectangle_129.svg" alt="">
+        <img class="Rectangle5" src="design/Rectangle_129.svg" alt="">
+        <img class="Rectangle6" src="design/Rectangle_129.svg" alt="">
+
     </div>
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

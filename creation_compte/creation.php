@@ -114,7 +114,7 @@ if(isset($_SESSION['prenom'])) {
     </nav>
     <?php } ?>
 
-    <img class="SENSE" src="image 42.svg" alt="">                  
+    <img class="SENSE" src="design/image 42.svg" alt="">                  
     <h1>MON COMPTE</h1> 
     </div>
 

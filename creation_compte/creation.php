@@ -74,7 +74,7 @@ if(isset($_POST['email']) && isset($_POST['mdp'])) {
                 <div class="ligne-verticale"></div>
                 <a href='news.php'>À PROPOS DE NOUS</a>
                 <div class="ligne-verticale"></div>
-                <a href='EQUIPEMENT/equipement.php'>NOS EQUIPEMENTS</a>
+                <a href='news.php'>NOS EQUIPEMENTS</a>
                 <div class="ligne-verticale"></div>
                 <a class="bold" id="bold" onclick="openPopup()">MON COMPTE</a>
             </div>
@@ -87,9 +87,7 @@ if(isset($_SESSION['prenom'])) {
     // Récupérer le prénom de l'utilisateur depuis la session
     $prenom = $_SESSION['prenom'];
     // Afficher le message de bienvenue avec le prénom de l'utilisateur
-    echo "<nav class='pop-up' role='connexion' id='pop-up'>
-            Bonjour, $prenom <a href='deconnexion.php'>Déconnexion</a>
-        </nav>";
+    echo "<nav class='pop-up' role='connexion' id='pop-up'>Bonjour, $prenom <a href='deconnexion.php'>Déconnexion</a></nav>";
 
 } else {
     // Afficher la fenêtre contextuelle de connexion si l'utilisateur n'est pas connecté
@@ -114,7 +112,7 @@ if(isset($_SESSION['prenom'])) {
     </nav>
     <?php } ?>
 
-    <img class="SENSE" src="design/image 42.svg" alt="">                  
+    <img class="SENSE" src="image 42.svg" alt="">                  
     <h1>MON COMPTE</h1> 
     </div>
 

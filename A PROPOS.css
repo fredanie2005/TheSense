@@ -1,0 +1,786 @@
+@font-face {
+    font-family: bold;
+    src: url('Amiko-Bold.ttf');
+}@font-face {
+    font-family: normal;
+    src: url('Amiko-Regular.ttf');
+}
+@font-face {
+    font-family: semi;
+    src: url('Amiko-SemiBold.ttf');
+}
+.menu a:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}
+
+.home {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between; /* Alignement des éléments à droite */
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 5px; /* Ajout d'un peu d'espace intérieur */
+    box-sizing: border-box; /* Inclure les paddings dans la largeur totale */
+    backdrop-filter: blur(3px);
+    overflow: auto;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+#bold {
+    font-family: 'bold';
+}
+
+.menu a {
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    transition: color 0.2s, text-shadow 0.2s;
+    font-family: 'semi';
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center; /* Aligner verticalement les éléments du header */
+    margin-left: auto; /* Pousse les éléments à droite */
+}
+
+.ligne-verticale {
+    border-left: 2px solid #000000; /* Remplacez #000 par la couleur de votre choix */
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+}
+.logo {
+    width: 70px;
+    height: 60px;
+    float:left;
+    justify-content: start;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+button 
+{
+    border: 1px solid #000000;
+    background-color: black;
+    font-family: Amiko;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.13em;
+    text-align: center;
+
+    width: 270px;
+    height: 61px;
+    border: 1px;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 920px;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+button a
+{
+    color: white;
+    text-decoration: none;
+}
+.SENSE
+{
+    position: absolute;   
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: 99;
+}
+.FORME
+{
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: -999;
+}
+.Logo1
+{
+    position: absolute;
+    top: 1940px;
+    width: auto;
+    height: auto;
+    left: 15%;
+    margin: 0;
+    z-index: -999;
+}
+.V37
+{
+    position: absolute;
+    top: 1100px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: -999;
+}
+.V38
+{
+    position: absolute;
+    top: 3679px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: -999;
+}
+
+
+
+.DESCRIPTION
+{
+    position: absolute;
+    width: 100%;
+    height: 618px;
+    top: 1070px;
+    background: #EAFFFB;
+}
+.DESCRIPTION .fond
+{
+    position: absolute;  /* Permettre le positionnement par rapport à l'élément parent */
+    left: 117px;
+    top: 89px;
+}
+.DESCRIPTION .video
+{
+    position: absolute;
+    left: 141px;
+    top: 111px;
+}
+.DESCRIPTION img
+{
+    position: absolute;
+    top: 266px;
+    left: 306px;
+}
+.container {
+    position: relative;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 1;
+}
+
+.fermer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.DESCRIPTION .Titre
+{
+    position: absolute;
+    height: 53px;
+    top: 97px;
+    left: 620px;
+    font-family: Amiko;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -0.03em;
+    text-align: left;
+
+}
+.DESCRIPTION p
+{
+    position: absolute;
+    top: 170px;
+    left: 626px;
+    right: 2%;
+    font-family: Abel;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.QUI
+{
+    position: absolute;
+    width: auto;
+    height: 808px;
+    top: 1788px;
+    left: 58px;
+    right: 58px;
+}
+.QUI .infos
+{
+    position: absolute;
+    top: 0;
+    height: 139px;
+    left: 92px;
+    right: 94px;
+}
+.QUI .infos .Titre
+{
+    position: absolute;
+    top: 0;
+    height: 53px;
+    left: 150px;
+    font-family: Amiko;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+.QUI .infos p
+{
+    position: absolute;
+    top: 63px;
+    height: 114px;
+    left: 151px;
+    right: 152px;
+    font-family: Abel;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.QUI .Nous
+{
+    position: absolute;
+    height: 501px;
+    top: 307px;
+    right: 58px;
+    left: 58px;
+
+}
+.QUI .Nous p
+{
+    font-family: Abel;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #3B4040;
+
+}
+.QUI .Nous span
+{
+    color: #1BDCC5;
+
+}
+.QUI .Nous .Colin
+{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    left: 180px;
+}
+.QUI .Nous .Thibault
+{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    left: 523px;
+}
+.QUI .Nous .Elo
+{
+    position: absolute;
+    top: 0;
+    height: 292px;
+    right: 580px;
+}
+.QUI .Nous .Bryce
+{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    right: 250px;
+}
+.QUI .Nous .infos .Colin
+{
+    position: absolute;
+    width: 330px;
+    left: 0px;
+    top: 309px;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.QUI .Nous .infos .Colin span
+{
+    color: black;
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.QUI .Nous .infos .Thibault
+{
+    position: absolute;
+    width: 330px;
+    left: 357px;
+    top: 309px;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center; 
+}
+.QUI .Nous .infos .Thibault span
+{
+    color: black;
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.QUI .Nous .infos .Elo
+{
+    position: absolute;
+    width: 330px;
+    left: 717px;
+    top: 309px;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.QUI .Nous .infos .Elo span
+{
+    color: black;
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.QUI .Nous .infos .Bryce
+{
+    position: absolute;
+    width: 330px;
+    left: 1077px;
+    top: 309px;
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.QUI .Nous .infos .Bryce span
+{
+    color: black;
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.OU
+{
+    position: absolute;
+    width: auto;
+    height: 723px;
+    top: 2860px;
+    left: 100px;
+    right: 153px;
+}
+.OU .Titre
+{
+    position: absolute;
+    top: 0px;
+    height: 30px;
+    left: 150px;
+    font-family: Amiko;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -0.03em;
+}
+.OU p
+{
+    position: absolute;
+    top: 78px;
+    height: 114px;
+    left: 150px;
+    right: 153px;
+    font-family: Abel;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.OU .Map
+{
+    position: absolute;
+    width: 760px;
+    height: auto;
+    top: 267px;
+    left: 100px;
+}
+.OU .Map .adresse
+{
+    position: absolute;
+    width: 250px;
+    height: 78px;
+    border-radius: 10px;
+    top: 168px;
+    left: 157px;
+    background: #D9FFF8CC;
+
+}
+.OU .Map .adresse span
+{
+    position: absolute;
+    width: 242px;
+    height: 64px;
+    top: 7px;
+    left: 4px;
+    font-family: Abel;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+
+}
+.OU .Map .point
+{
+    position: absolute;
+    width: 56px;
+    height: 51px;
+    top: 251px;
+    left: 256px;
+}
+.OU .horaire
+{
+    position: absolute;
+    width: 267px;
+    height: auto;
+    top: 251px;
+    bottom: 0px;
+    left: 1054px;
+}
+
+.OU .horaire .Titre
+{
+    position: absolute;
+    top: auto;
+    height: 30px;
+    left: 0px;
+    width: 100%;
+    font-family: Amiko;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.OU .horaire .date
+{
+    position: absolute;
+    font-family: Abel;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 131.99px;
+    height: 407.09px;
+    top: 67px;
+    left: 0;
+}
+.OU .horaire .heure
+{
+    position: absolute;
+    font-family: Abel;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 131.99px;
+    height: 407.09px;
+    top: 67px;
+    left: 134px;
+}
+.OU .horaire span
+{
+    color: #9C0000;
+}
+
+
+.CONTACT
+{
+    position: absolute;
+    width: auto;
+    height: 723px;
+    top: 3610px;
+    left: 340px;
+    right: 340px;
+}
+.CONTACT .Titre
+{
+    position: absolute;
+    height: 53px;
+    top: auto;
+    left: 257px;
+    right: 257px;
+    font-family: Amiko;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+}
+.CONTACT form
+{
+    position: absolute;
+    width: 100%;
+    height: 476px;
+    top: 103px;
+}
+.CONTACT form .nom
+{
+    position: absolute;
+    width: auto;
+    height: 45px;
+    top: 30px;
+    left: 0px;
+    right: 55%;
+    border-radius: 10px;
+    border: 1px solid #3B4040;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: transparent;
+
+}
+.CONTACT form .prenom
+{
+    position: absolute;
+    width: auto;
+    height: 45px;
+    top: 30px;
+    right: 0px;
+    left: 55%;
+    border-radius: 10px;
+    border: 1px solid #3B4040;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: transparent;
+
+    
+}
+.CONTACT form .email
+{
+    position: absolute;
+    width: auto;
+    height: 45px;
+    top: 95px;
+    left: 0px;
+    right: 55%;
+    border-radius: 10px;
+    border: 1px solid #3B4040;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: transparent;
+}
+.CONTACT form .demande
+{
+    position: absolute;
+    width: auto;
+    height: 251px;
+    top: 160px;
+    left: 0px;
+    right: 0%;
+    border-radius: 10px;
+    border: 1px solid #3B4040;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: transparent;
+}
+.CONTACT form .envoie
+{
+    position: absolute;
+    width: auto;
+    height: 40px;
+    top: 431px;
+    left: 355px;
+    color: #fff;
+    right: 355px;
+    border-radius: 10px;
+    border: 1px solid #3B4040;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #1BDCC5;
+}
+.CONTACT p
+{
+    position: absolute;
+    width: auto;
+    top: 555px;
+    left: 340px;
+    right: 340px;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #3B4040 ;
+
+}
+.CONTACT p #num
+{
+    color: #0DE4BD;
+    font-weight: bold;
+    font-family: Amiko;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: -0.04em;
+}
+
+.footer{
+    position: absolute;
+    top: 4600px;
+    font-family: alatsi;
+    justify-content:space-between;
+    background-color: rgba(59, 64, 64, 1);
+    width: 100%;
+    padding: 5px; /* Ajout d'un peu d'espace intérieur */
+    box-sizing: border-box; /* Inclure les paddings dans la largeur totale */
+    overflow: auto;
+}
+.footer-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#82FFE1;
+}
+
+.pages{
+    margin: 15px;
+}
+
+#Contact{
+    text-decoration: none;
+    color:#82FFE1;
+    margin: 15px;
+}
+
+#Reservation{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+#FAQ{
+    text-decoration: none;
+    color:#82FFE1;
+}
+
+#Copyright{
+    position: relative;
+    right:50%;
+    left:50%;
+}
+
+.Regles{
+    display: flex;
+    align-items: center;
+}
+
+#Modalités{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+#Confidentialité{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+.ligne-verticale-ft {
+    border-left: 2px solid #82FFE1; /* Remplacez #000 par la couleur de votre choix */
+    height: 25px; /* Ajustez la hauteur selon vos besoins */
+    margin-right: 15px;
+}
+
+#Yb{
+    margin-right: 15px;
+}
+#Ig{
+    margin-right: 15px;
+}
+#Tw{
+    margin-right: 15px;
+}

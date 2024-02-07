@@ -1,0 +1,292 @@
+@font-face {
+    font-family: Amiko_Bold;
+    src: url('Amiko-Bold.ttf');
+}@font-face {
+    font-family: Amiko_Regular;
+    src: url('Amiko-Regular.ttf');
+}
+@font-face {
+    font-family: Amiko_SemiBold;
+    src: url('Amiko-SemiBold.ttf');
+}
+@font-face {
+    font-family: Abel;
+    src: url('Abel-Regular.ttf');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('Poppins-Thin.ttf');
+}
+.menu a:hover {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}
+
+.home {
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between; /* Alignement des éléments à droite */
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 5px; /* Ajout d'un peu d'espace intérieur */
+    box-sizing: border-box; /* Inclure les paddings dans la largeur totale */
+    backdrop-filter: blur(3px);
+    overflow: auto;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+#bold {
+    font-family: 'bold';
+}
+
+.menu a {
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 18px;
+    transition: color 0.2s, text-shadow 0.2s;
+    font-family: 'semi';
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center; /* Aligner verticalement les éléments du header */
+    margin-left: auto; /* Pousse les éléments à droite */
+}
+
+.ligne-verticale {
+    border-left: 2px solid #000000; /* Remplacez #000 par la couleur de votre choix */
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+}
+.logo {
+    width: 70px;
+    height: 60px;
+    float:left;
+    justify-content: start;
+    filter: invert(100%);
+
+}
+
+body{
+    background-color:#131313;
+    background-image: url(design2/Vector_78.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.titre{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    
+}
+
+
+button 
+{
+    border: 1px solid #000000;
+    background-color: black;
+    font-family: 'Amiko';
+    font-size: 28px;
+    width: 270px;
+    height: 61px;
+    border: 1px;
+    border-radius: 10px;
+    font-weight: 400;
+    line-height: 37px;
+    margin: 0;
+    position: absolute;
+    top: 920px;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+button a
+{
+    color: white;
+    text-decoration: none;
+}
+
+body .DESCRIPTION
+{
+    position: absolute;
+    top: 1220px;
+    background: #EAFEFF;
+    width: 100%;
+    height: 555px;
+
+}
+.DESCRIPTION .Titre
+{
+    position: absolute;
+    top: 91px;
+    left: 674px;
+    color: #3B4040;
+
+
+}
+body .DESCRIPTION .titre_logo{
+    position: absolute;
+    width:297.79px;
+    height: 48.69px;
+    top: 85px;
+    left: 1045px;
+
+}
+body .DESCRIPTION .background{
+    position: absolute;
+    left: 117px;
+    top: 89px;
+}
+
+body .DESCRIPTION .video
+{
+    position: absolute;
+    left: 135px;
+    top: 111px;
+}
+body .DESCRIPTION img
+{
+    position: absolute;
+    top: 266px;
+    left: 306px;
+}
+body .DESCRIPTION .container {
+    position: relative;
+}
+
+body .DESCRIPTION .container .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 1;
+}
+
+body .DESCRIPTION .container .popup .fermer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.DESCRIPTION p
+{
+    position: absolute;
+    font-family: 'Abel';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 816px;
+    height: 223px;
+    top: 182px;
+    left: 674px;
+    color: #000000;
+
+}
+
+
+
+
+
+
+.footer{
+    position: absolute;
+    top: 4700px;
+    left: 0px;
+    font-family: alatsi;
+    justify-content:space-between;
+    background-color: rgba(59, 64, 64, 1);
+    width: 100%;
+    padding: 5px; /* Ajout d'un peu d'espace intérieur */
+    box-sizing: border-box; /* Inclure les paddings dans la largeur totale */
+    overflow: auto;
+}
+.footer-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#82FFE1;
+}
+
+.pages{
+    margin: 15px;
+}
+
+#Contact{
+    text-decoration: none;
+    color:#82FFE1;
+    margin: 15px;
+}
+
+#Reservation{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+#FAQ{
+    text-decoration: none;
+    color:#82FFE1;
+}
+
+#Copyright{
+    position: relative;
+    right:50%;
+    left:50%;
+}
+
+.Regles{
+    display: flex;
+    align-items: center;
+}
+
+#Modalités{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+#Confidentialité{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+.ligne-verticale-ft {
+    border-left: 2px solid #82FFE1; /* Remplacez #000 par la couleur de votre choix */
+    height: 25px; /* Ajustez la hauteur selon vos besoins */
+    margin-right: 15px;
+}
+
+#Yb{
+    margin-right: 15px;
+}
+#Ig{
+    margin-right: 15px;
+}
+#Tw{
+    margin-right: 15px;
+}

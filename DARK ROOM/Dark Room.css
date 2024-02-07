@@ -113,9 +113,9 @@ button
     font-weight: 400;
     line-height: 37px;
     margin: 0;
-    position: absolute;
-    top: 920px;
-    left: 47%;
+    position: relative;
+    top: 290px;
+    left: 48%;
     transform: translate(-50%, -50%);
 }
 button a
@@ -128,7 +128,7 @@ body .DESCRIPTION
 {
     position: absolute;
     top: 1220px;
-    background: #EAFEFF;
+    background: #000000;
     width: 100%;
     height: 555px;
 
@@ -137,22 +137,22 @@ body .DESCRIPTION
 {
     position: absolute;
     top: 91px;
-    left: 674px;
+    left: 525px;
     color: #3B4040;
 
 
 }
 body .DESCRIPTION .titre_logo{
     position: absolute;
-    width:297.79px;
-    height: 48.69px;
-    top: 85px;
-    left: 1045px;
+    width: 600px;
+    height: 90px;
+    top: 75px;
+    left: 740px;
 
 }
 body .DESCRIPTION .background{
     position: absolute;
-    left: 117px;
+    left: 112px;
     top: 89px;
 }
 
@@ -199,17 +199,342 @@ body .DESCRIPTION .container .popup .fermer {
     line-height: 31px;
     letter-spacing: 0em;
     text-align: left;
-    width: 816px;
-    height: 223px;
+    width: 811px;
+    height: 130px;
     top: 182px;
     left: 674px;
-    color: #000000;
+    color: #FFFFFF;
+    
 
+}
+
+.DESCRIPTION .warning{
+    position: absolute;
+    font-family: 'Abel';
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 811px;
+    height: 130px;
+    top: 400px;
+    left: 674px;
+    color: #FF0000;
+    line-height: 31px;
+    font-size: 17px;
+    
+
+
+
+    
+
+}
+
+
+body .Titre{
+    position: absolute;
+    font-family: 'Amiko_Bold';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    width: 766px;
+    height: 53px;
+    top: 115px;
+    left: 200px;
+    color: #3B4040;
+
+    
+
+
+
+
+}
+
+body .Partie_2{
+    background-image: url(design2/Vector\ 80.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 1770px;
+    width: 100%;
+    height: 350%;
+
+
+}
+
+
+.Partie_2 .Titre{
+    position: absolute;
+    width: 900px;
+    height: 635px;
+    top: 100px;
+    left: 110px;
+    color: #FFFFFF;
+    
+
+
+}
+
+
+.Partie_2 .ImacceuilContainer{
+    position: absolute;
+    border-radius: 10px;
+    width: 1290px;
+    height: 916px;
+    top: 138px;
+    left: 150px;
+    z-index: 1;
+
+    
+}
+
+
+
+.center{
+    position: relative;
+    top: 910px;
+    left: 180px;
+    width: 1228px;
+    height: 300px;
+    background-color: #616161;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.Partie_2 .center .Titre1{
+    font-family: "Amiko_Bold";
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    position: absolute;
+    left: 45px;
+    height: 41px;
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+
+.Partie_2 .center .Titre2{
+    position: absolute;
+    top: 25px;
+    left: 480px;
+    border: 1.5px;
+    width: 38px;
+    height: 45px;
+    color: #FFFFFF;
+  
+}
+
+.Partie_2 .center .Titre3{
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 250px;
+    line-height: 45px;
+    letter-spacing: 0.03em;
+    position: absolute;
+    top: -5px;
+    left: 510px;
+    height: 46px;
+    color: #FFFFFF;
+    
+
+}
+
+
+.Partie_2 .center .text{
+    font-family: 'Abel';
+    font-size: 21px;
+    font-weight: 5;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    position: relative;
+    top: 70px;
+    left: 5px;
+    width: 1150px;
+    height: 3px;
+    color: #FFFFFF;
+    
+
+
+
+}
+
+.Partie_2 .center2{
+    position: relative;
+    top: 1570px;
+    left: 180px;
+    width: 1228px;
+    height: 325px;
+    background-color: #616161;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Partie_2 .center .Bouton-Container{
+    Width: auto;
+    Height: 50px;
+    position: absolute;
+    Top: 225px;
+    left: 500px;
+
+}
+
+
+.Partie_2 .ImacceuilContainer2{
+    position: absolute;
+    width: 1290px;
+    height: 916px;
+    top: 1100px;
+    left: 150px;
+    z-index: 1;
+
+}
+
+
+.Partie_2 .center2 .Titre1{
+    font-family: "Amiko_Bold";
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    position: absolute;
+    left: 45px;
+    height: 41px;
+    font-size: 30px;
+    color:#FFFFFF;
+}
+
+
+.Partie_2 .center2 .Titre2{
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    border: 1.5px;
+    width: 38px;
+    height: 45px;
+}
+
+.Partie_2 .center2 .Titre3{
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-weight: 250;
+    line-height: 45px;
+    letter-spacing: 0.03em;
+    position: absolute;
+    top: -5px;
+    left: 230px;
+    height: 46px;
+    color: #FFFFFF;
+}
+
+
+.Partie_2 .center2 .text{
+    font-family: 'Abel';
+    font-size: 22px;
+    font-weight: 5;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    position: relative;
+    top: 70px;
+    left: -5px;
+    width: 1115px;
+    height: 3px;
+    text-align: justify; 
+    color: #FFFFFF;
+}
+
+.Partie_2 .center2 .Bouton-Container{
+    Width: auto;
+    Height: 50px;
+    position: absolute;
+    Top: 250px;
+    left: 500px;
 }
 
 
 
 
+
+
+.GALERIE
+{
+    position: absolute;
+    top: 4045px;
+    width: 100%;
+    background: url(design2/image\ 127.svg) no-repeat;    
+    background-size: cover;
+    background-position: center;
+    height: 669px;
+}
+
+.GALERIE .C .com {
+    position: absolute;
+    top: 326px;
+    left: 25%;
+    right: 25%;
+    font-family: Amiko;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.GALERIE .Cercle1
+{
+    position: absolute;
+    top: 50px;
+    left: 71px;
+}
+
+.GALERIE .Cercle2
+{
+    position: absolute;
+    top: 50px;
+    left: 141px;
+}
+
+.GALERIE .Rectangle1
+{
+    position: absolute;
+    top: 626px;
+    left: 590px;
+}
+.GALERIE .Rectangle2
+{
+    position: absolute;
+    top: 626px;
+    left: 660px;
+}
+.GALERIE .Rectangle3
+{
+    position: absolute;
+    top: 626px;
+    left: 730px;
+}
+.GALERIE .Rectangle4
+{
+    position: absolute;
+    top: 626px;
+    left: 800px;
+}
+.GALERIE .Rectangle5
+{
+    position: absolute;
+    top: 626px;
+    left: 870px;
+}
+.GALERIE .Rectangle6
+{
+    position: absolute;
+    top: 626px;
+    left: 940px;
+}
 
 
 .footer{

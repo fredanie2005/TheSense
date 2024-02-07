@@ -34,12 +34,12 @@
     <button><a href="">DÉCOUVRIR</a></button>
 
     <div class="DESCRIPTION">
-                <img class="Titre" src="design/TITRE.svg">
-                <img class="titre_logo" src="design2/Light_Room_petit_logo.svg" alt="">
+                <img class="Titre" src="design2/TITRE.svg">
+                <img class="titre_logo" src="design2/DARK_ROOM_petit_logo.svg" alt="">
                 <img class="background" src="design2/Ellipse_36.svg" alt="">
                 <img class="video" src="design2/VIDEO.svg" alt="">
                 <div class="container">
-                    <img src="design/Polygon_3.svg" alt="Image" onclick="afficherEtLancer()">
+                    <img src="design2/Polygon_3.svg" alt="Image" onclick="afficherEtLancer()">
                     <div class="popup" id="popupVideo">
                         <span class="fermer" onclick="fermerPopup()">&times;</span>
                         <video id="videoPlayer" width="1500" height="auto" controls autoplay onended="fermerPopup()">
@@ -51,11 +51,86 @@
                
                 
 
-                <p> Voyagez, explorez, découvrez LIGHT ROOM ! Découvrez des paysages somptueux et des histoires palpipante dans cette salle accessible pour toute la famille. 
-                    Ici tout n’est qu’affaire d’émotions et de beauté, explorer les décors de nos expériences et partez à l’aventure en famille ou entre amis à partir de 12 ans. 
-                    Il ne vous reste plus qu’à franchir le seuil de la LIGHT ROOM et à vous laissez transporter dans un voyage époustouflant. Vos émotions n’attendent que vous !
+                <p> Vous pensez ne pas avoir peur du noir ? Que rien ne pourra vous effrayer ? Vous avez tord. Avec la DARK ROOM, toutes vos peurs deviendront réelles et en rien de temps, il ne 
+                    vous restera plus que vos jambes pour vous enfuir. Vous vous penser suffisamment fort pour affronter vos peurs ? Franchissez donc le seuil de la DARK ROOM. Vous avez
+                    hâte d’y entrer mais dans le noir... Personne ne vous verra mourir.
                 </p>
+
+                <p class="warning">*Les expériences proposées dans cette salle ne conviennent pas à un public mineur ou sensible.</p>
     </div>
+
+
+    <div class="Partie_2">
+        <p class ="Titre">REVEILLEZ LA PEUR QUI SOMMEILLE EN VOUS</p>
+        <img src="design2/image_46.svg" alt="image Shangri-La : la cité perdue de Z" class="ImacceuilContainer">
+        <div class="center">
+                <p class="Titre1">THE CONJURING EXPERIENCE</p>
+                <img src="design2/Line_12.svg" alt="" class="Titre2">
+                <p class="Titre3">DARK ROOM</p> 
+                <p class="text">
+                Revivez l'histoire d'un chef d'oeuvre cinématographique au travers d’une expérience aussi bien réaliste qu'immersive. Rassemblez
+                ce qu'il vous reste de courage, les inspecteurs Ed et Loren Warren ont besoin de vous. Un malheur hante la maison de ces
+                derniers et vous ne pouvez vous en échapper sans sacrifices. Serez-vous à la hauteur de ce qui vous attend ? Bonne chance,
+                vous en aurez besoin !
+                </p>
+            
+                <a href="reservation.html" class="Bouton-Container"><img src="design2/reserv.svg" title="bouton réservation" alt="lien pour une réservation sur le site"></a>
+        </div>
+        
+        <img src="design2/image_58.svg" alt="" class="ImacceuilContainer2">
+        <div class="center2">
+            <p class="Titre1">NAMELESS</p>
+            <img src="design2/Line_12.svg" alt="" class="Titre2">
+            <p class="Titre3">DARK ROOM</p> 
+            <p class="text">
+            De retour de soirée avec vos amis, votre voiture tombe soudainement en panne au beau milieu des bois. Coïncidence,
+            c’est dans cette forêt que l’on a signalé de mystérieuses disparitions. Après un long moment à tenter d’appeller une dépanneuse,
+            vous vous rendez compte que vous ne pouvez compter que sur vous-même pour vous en sortir. Mais dans le froid de la nuit 
+            et les recoins de la forêt, quelque chose rôde. Travaillez en équipe car sans vos amis, vous n’aurez aucune chance,
+            survivrez-vous assez longtemps ?
+            </p>
+        
+                
+            <a href="reservation.html" class="Bouton-Container"><img src="design2/reserv.svg" title="bouton réservation" alt="lien pour une réservation sur le site"></a>
+            
+                
+        </div>
+    </div>
+
+
+
+    <div class="GALERIE">
+                      
+        <div class="C">
+            <p class="com">
+            “Avec mes fils nous avons tenté l’expérience “NAMELESS”, moi qui pensais avoir tout vu dans le domaine de l’horreur, je ne me suis jamais autant trompé. Si vous êtes à la recherche de sensation forte et de frissons, la DARK ROOM est faite pour vous”
+            - Nicolas, 3 Septembre 2020 -
+            </p> 
+        </div>
+        <img class="Cercle1" src="design2/Cercle 1.svg" alt="">
+        <img class="Cercle2" src="design2/Cercle 2.svg" alt="">
+
+                    
+        <img class="Rectangle1" src="design2/Rectangle_129.svg" alt="">
+        <img class="Rectangle2" src="design2/Rectangle_129.svg" alt="">
+        <img class="Rectangle3" src="design2/Rectangle_129.svg" alt="">
+        <img class="Rectangle4" src="design2/Rectangle_129.svg" alt="">
+        <img class="Rectangle5" src="design2/Rectangle_129.svg" alt="">
+        <img class="Rectangle6" src="design2/Rectangle_129.svg" alt="">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -85,6 +160,7 @@
             </div>
         </div>
     </footer>
+    <script src="test.js"></script>
 </body>
 
 </html>

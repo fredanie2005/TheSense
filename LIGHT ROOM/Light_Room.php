@@ -3,10 +3,10 @@
 <head>
     <title>Light Room</title>
     <link rel="icon" type="image/png" href="ico.ico">
-    <link rel="stylesheet" href="Light_Room.css">
+    <link rel="stylesheet" href="Light_Room1.css">
 </head>
 <body>
-<header role="header">
+    <header role="header">
         <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
         <a href="accueil.php" id="accueil"><img src="design/Logo.svg" alt="logo" class="logo"></a>
@@ -28,9 +28,19 @@
     </header>
 
 
-    <div class="titre">
-            <img src="design/Light_Room_logo.svg" alt="Logo de l'expérience et au dessus les trois autres expériences en plus petit">
-    </div> 
+    
+    <div class="title">
+        <a href="Dark_Room.php"><img src="design/DARK_ROOM.svg" alt="" class="DK"></a>
+        <a href="Battle_Room.php"><img src="design/BATTLE_ROOM.svg" alt="" class="BR"></a>
+        <a href="Creative_Room.php"><img src="design/CREATIVE.svg" alt="" class="CR"></a>
+        <img src="design/LIGHT_ROOM_logo.svg" class="Titre_logo">
+    </div>
+    
+    
+    
+   
+    
+
 
     <button><a href="">DÉCOUVRIR</a></button>
 

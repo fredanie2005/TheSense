@@ -1,0 +1,711 @@
+@font-face {
+    font-family: bold;
+    src: url('design/Amiko-Bold.ttf');
+}@font-face {
+    font-family: normal;
+    src: url('design/Amiko-Regular.ttf');
+}
+@font-face {
+    font-family: semi;
+    src: url('design/Amiko-SemiBold.ttf');
+}
+@font-face {
+    font-family: alatsi;
+    src: url('design/Alatsi-Regular.ttf');
+}
+@font-face {
+    font-family: abel;
+    src: url('design/Abel-Regular.ttf');
+}
+@media (max-width : 1000px){
+    .burger{
+        display: flex;
+        justify-content: end;
+        margin-right: 5px;
+        width : 30px;
+        height:auto;
+    }
+    .haut{
+        justify-content: space-between;
+        display:flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(3px);
+        overflow: auto;
+        padding: 5px;
+        width: 100%;
+    }
+    .header-text{
+        display: none;
+    }
+    .compte{
+        display: block;
+    }
+    .pop-up{
+        display: none;
+    }
+}
+@media (min-width:1001px){
+
+
+    .menu a:hover {
+        text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+        color: #fff;
+        text-decoration-thickness: 3px;
+        font-size : 120%;
+    }
+    
+    .pop-up{
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        width: 524px;
+        height: auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: none;
+        border: 2px solid black;
+        z-index: 999;
+    }
+
+    .pop-up h2{
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        font-family: 'Amiko';
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        letter-spacing: -0.135em;
+        text-align: left;
+    }
+
+    .espace{
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .espace input{
+        width: 340px;
+        height: 35px;
+        border-radius: 5px;
+        border: 1px;
+        border: 1px solid #1BDCC5;
+        font-family: Abel;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+
+    }
+    
+    .pop-up label{
+        display: flex;
+        justify-content: end;
+        margin-right: 50px;
+    }
+
+    #conn-button {
+        border: 1px solid #000000;
+        background-color: black;
+        color:#ffffff;
+        font-family: normal;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 37px;
+        letter-spacing: -0.13em;
+        text-align: center;
+
+        width: 175px;
+        height: 45px;
+        border: 1px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .reject-button,
+    .accept-button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border: none;
+    border-radius: .375em;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #363636;
+    cursor: pointer;
+    display: inline-flex; /* Propriété commune */
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    height: 2.5em;
+    justify-content: center;
+    line-height: 1.5;
+    padding: calc(.5em - 1px) 1em;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+    }
+    .button-container2 {
+        display: inline-flex;
+    }
+
+    .reject-button:active,
+    .accept-button:active {
+    border-color: #4a4a4a;
+    outline: 0;
+    }
+
+    .reject-button:focus,
+    .accept-button:focus {
+    border-color: #485fc7;
+    outline: 0;
+    }
+
+    .reject-button:hover,
+    .accept-button:hover {
+    border-color: #b5b5b5;
+    }
+
+    .reject-button:focus:not(:active),
+    .accept-button:focus:not(:active) {
+    box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+    }
+    .button-container2 {
+        display: inline-flex;
+    }
+
+    .home {
+        width: 50px;
+        height: 50px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        display:flex;
+        justify-content: space-between; /* Alignement des éléments à droite */
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        padding: 5px; /* Ajout d'un peu d'espace intérieur */
+        box-sizing: border-box; /* Inclure les paddings dans la largeur totale */
+        backdrop-filter: blur(3px);
+        overflow: auto;
+    }
+    #Creer{
+        text-decoration: none;
+        color:#000000;
+        font-family: "abel";
+    }
+
+    .menu {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #bold {
+        font-family: 'bold';
+    }
+
+    .menu a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 18px;
+        transition: color 0.2s, text-shadow 0.2s;
+        font-family: 'semi';
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header-text {
+        display: flex;
+        align-items: center; /* Aligner verticalement les éléments du header */
+        margin-left: auto; /* Pousse les éléments à droite */
+    }
+
+    .ligne-verticale {
+        border-left: 2px solid #000000; /* Remplacez #000 par la couleur de votre choix */
+        height: 50px; /* Ajustez la hauteur selon vos besoins */
+    }
+
+    .burger{
+        display:none;
+    }
+    }
+
+.logo {
+    width: 70px;
+    height: 60px;
+    float:left;
+    filter:invert(100%);
+}
+
+body {
+    margin: 0;
+}
+
+.SENSE
+{
+    position: relative;   
+    top: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: 99;
+}
+h1 {
+    position: absolute;
+    top: 80px;
+    left: calc(5px);
+    right: calc(5px);
+    text-align: center;
+    color: #fff;
+    font-family: Amiko;
+    font-size: calc(1vw + 120px);
+    font-weight: 700;
+    line-height: 160px;
+    letter-spacing: -0.13em;
+    z-index: 990;
+}
+
+
+.Titre
+{
+    z-index: 999;
+    width: auto;
+    font-size: calc(1vw + 15px); 
+    position: relative;
+    font-family: Amiko;
+    font-weight: 700;
+    line-height: 53px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    height: 53px;
+    top: 70px;
+    margin-left: calc(150px);
+    margin-right: calc(138px);
+    color: #3B4040;
+
+}
+.paragraphe
+{
+    position: relative;
+    font-family: Abel;
+    font-size: calc(1vw + 15px); 
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: auto;
+    height: 114px;
+    top: 30px;
+    margin-left: calc(150px);
+    margin-right: calc(130px);
+
+}
+.new1 {
+    position: relative;
+    width: auto;
+    top: 50px;
+    height: 624px;
+    border-radius: 10px;
+    margin-left: calc(115px);
+    margin-right: calc(115px);
+    background: #000000;
+}
+
+.new1 .fond
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 999;
+    border-radius: 10px;
+}
+.new1 .info 
+{
+    position: absolute;
+    background-color: gray;
+    height: 292px;
+    width: calc(100% - 30px); /* Ajustez en tenant compte de la marge droite */
+    z-index: 800;
+    top: 620px;
+    margin-left: calc(15px);
+}
+.new1 .info .Titre
+{
+    z-index: 999;
+    position: relative;
+    top: 5px;
+    width: auto;
+    text-align: center;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    font-size: calc(1vw + 15px); 
+}
+.new1 .info .text
+{
+    z-index: 999;
+    color: #646363;    
+    position: absolute;
+    top: 60px;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    width: auto;
+    font-family: Abel;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    font-size: calc(1vw + 15px); 
+}
+
+
+.container {
+    position: relative;    
+    top: 400px;
+    display: flex;
+    margin-left: calc(90px);
+    margin-right: calc(50px);
+}
+
+.new2, .new3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 916px;
+    border-radius: 10px;
+    margin-right: calc(40px);
+    border-radius: 10px; /* Ajoute un espace entre les deux divs */
+}
+
+.new2 .fond
+{
+    position: absolute;
+    width: 100%;
+    height: 622px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 998;
+}
+.new2 .info 
+{
+    position: absolute;
+    background-color: gray;
+    height: 292px;
+    width: calc(100% - 30px); /* Ajustez en tenant compte de la marge droite */
+    z-index: 800;
+    top: 620px;
+    margin-left: calc(15px);
+}
+.new2 .info .Titre {
+    z-index: 999;
+    position: relative;
+    top: -25px;
+    width: auto;
+    text-align: center;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    font-size: calc(1vw + 15px);  /* ou une autre valeur qui convient à votre conception */
+}
+
+.new2 .info .text
+{
+    z-index: 999;
+    color: #646363;    
+    position: absolute;
+    top: 60px;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    width: auto;
+    font-family: Abel;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    font-size: calc(1vw + 15px); 
+}
+
+.new3 .fond
+{
+    position: absolute;
+    width: 100%;
+    height: 622px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 998;
+}
+.new3 .info 
+{
+    position: absolute;
+    background-color: gray;
+    height: 292px;
+    width: calc(100% - 30px); /* Ajustez en tenant compte de la marge droite */
+    z-index: 800;
+    top: 620px;
+    margin-left: calc(15px);
+}
+.new3 .info .Titre {
+    z-index: 999;
+    position: relative;
+    top: -25px;
+    width: auto;
+    text-align: center;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    font-size: calc(1vw + 15px);  /* ou une autre valeur qui convient à votre conception */
+}
+.new3 .info .text
+{
+    z-index: 999;
+    color: #646363;    
+    position: absolute;
+    top: 60px;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    width: auto;
+    font-family: Abel;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    font-size: calc(1vw + 15px); 
+}
+
+
+.new4
+{
+    position: relative;
+    width: auto;
+    height: 916px;
+    top: 500px;
+    margin-left: calc(115px);
+    margin-right: calc(115px);
+    border-radius: 10px;
+}
+.new4 .fond
+{
+    position: absolute;
+    width: 100%;
+    height: 622px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 998;
+}
+.new4 .info {
+    position: absolute;
+    background-color: gray;
+    height: 292px;
+    width: calc(100% - 30px); /* Ajustez en tenant compte de la marge droite */
+    z-index: 800;
+    top: 620px;
+    margin-left: calc(15px); /* Positionnement à partir de la droite */
+}
+
+.new4 .info .Titre {
+    z-index: 999;
+    position: relative;
+    top: -25px;
+    width: auto;
+    text-align: center;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    font-size: calc(1vw + 15px); /* ou une autre valeur qui convient à votre conception */
+}
+.new4 .info .text
+{
+    z-index: 999;
+    color: #646363;    
+    position: absolute;
+    top: 60px;
+    margin-left: calc(5px);
+    margin-right: calc(5px);
+    width: auto;
+    font-family: Abel;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    font-size: calc(1vw + 15px); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.AVIS
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Pour empêcher le défilement horizontal */
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 560px;
+    margin-left: calc(0);
+    margin-right: calc(0);
+
+
+}
+
+.AVIS .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.AVIS .carousel {
+    display: flex;
+    width: 100%;
+    height: 779px; /* Deux fois la largeur de l'écran pour que les images remplissent la largeur */
+    transition: transform 0.5s ease;
+}
+
+.AVIS .carousel img {
+    width: 100%;
+    height: 779px; /* Pour chaque image à remplir la largeur */
+}
+
+
+
+.AVIS .gauche, .droite {
+    border: transparent;
+    background: transparent;
+}
+ 
+.AVIS .gauche
+{
+    position: absolute;
+    top: 50px;
+    left: calc(30px);
+}.AVIS .droite
+{
+    position: absolute;
+    top: 50px;
+    left: calc(100px);
+}
+
+    .com1, .com2 {
+    position: absolute;
+    top: 326px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Amiko;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.com1{
+    display: block;
+}
+.com2{
+    display: none;
+}
+
+
+.FORME
+{
+    position: absolute;
+    top: 505px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    z-index: -999;
+}
+.footer{
+    position: relative;
+    top: 550px;
+    font-family: alatsi;
+    justify-content:space-between;
+    background-color: rgba(59, 64, 64, 1);
+    width: 100%;
+    padding: 5px; /* Ajout d'un peu d'espace intérieur */
+    box-sizing: border-box; /* Inclure les paddings dans la largeur totale */
+    overflow: auto;
+}
+.footer-text{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#82FFE1;
+}
+
+.pages{
+    margin: 15px;
+}
+
+#Contact{
+    text-decoration: none;
+    color:#82FFE1;
+    margin: 15px;
+}
+
+#Reservation{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+#FAQ{
+    text-decoration: none;
+    color:#82FFE1;
+}
+
+#Copyright{
+    position: relative;
+    right:50%;
+    left:50%;
+}
+
+.Regles{
+    display: flex;
+    align-items: center;
+}
+
+#Modalités{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+#Confidentialité{
+    text-decoration: none;
+    color:#82FFE1;
+    margin-right: 15px;
+}
+
+.ligne-verticale-ft {
+    border-left: 2px solid #82FFE1; /* Remplacez #000 par la couleur de votre choix */
+    height: 25px; /* Ajustez la hauteur selon vos besoins */
+    margin-right: 15px;
+}
+
+#Yb{
+    margin-right: 15px;
+}
+#Ig{
+    margin-right: 15px;
+}
+#Tw{
+    margin-right: 15px;
+}

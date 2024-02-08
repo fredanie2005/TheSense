@@ -1,56 +1,3 @@
-<?php
-session_start();
-
-// Vérifier si l'utilisateur est déjà connecté
-
-// Connexion à la base de données
-$servername = "mysql-quizlofl.alwaysdata.net";
-$username = "quizlofl";
-$password = "GC50TECH";
-$dbname = "quizlofl_rrr";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Vérifier la connexion
-if ($conn->connect_error) {
-    die("Échec de la connexion : " . $conn->connect_error);
-}
-
-// Vérifier si le formulaire de connexion a été soumis
-if(isset($_POST['email']) && isset($_POST['mdp'])) {
-    // Récupérer les données du formulaire
-    $email = $_POST['email'];
-    $password = $_POST['mdp'];
-
-    // Requête SQL pour vérifier l'existence de l'utilisateur
-    $sql = "SELECT * FROM USER WHERE email='$email'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        // L'utilisateur existe, vérifier le mot de passe
-        $user = $result->fetch_assoc();
-        if (password_verify($password, $user['password'])) {
-            // Mot de passe correct, connecter l'utilisateur
-            $_SESSION['user_email'] = $user['email'];
-            // Récupérer le prénom de l'utilisateur
-            $prenom = $user['user']; // Récupérer le prénom en supposant que le nom complet est stocké dans le champ 'user'
-            // Stocker le prénom dans la session
-            $_SESSION['prenom'] = $prenom;
-            // Rediriger vers la page d'accueil
-            header("Location: $_SERVER[HTTP_REFERER]");
-            exit();
-        } else {
-            // Mot de passe incorrect
-            $error = "Mot de passe incorrect";
-        }
-    } else {
-        // Utilisateur non trouvé
-        $error = "Utilisateur non trouvé";
-    }
-}
-?>
-
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -59,7 +6,7 @@ if(isset($_POST['email']) && isset($_POST['mdp'])) {
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="cee.css">
+    <link rel="stylesheet" href="Nouveau dossier/cee.css">
 </head>
 
 <body>
@@ -114,7 +61,7 @@ if(isset($_SESSION['prenom'])) {
     </nav>
     <?php } ?>
 
-    <img class="SENSE" src="design/image 42.svg" alt="">                  
+    <img class="SENSE" src="image 42.svg" alt="">                  
     <h1>MON COMPTE</h1> 
     </div>
 
@@ -124,7 +71,7 @@ if(isset($_SESSION['prenom'])) {
         <p class="Titre">Créer un compte </p>
         <form method="post" action="register.php" onsubmit="return validatePassword()">
             <div class="NP">
-                <label>Nom prénom</label> <input type="text" class="username" name="new_username" placeholder="Nommm prénom" required>
+                <label>Nom prénom</label> <input type="text" class="username" name="new_username" placeholder="Nom prénom" required>
             </div>
             <div class="mail">
                 <label>Mon adresse mail </label> <input type="email" class="email" name="new_email" placeholder="Adresse mail" required>

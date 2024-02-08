@@ -1,3 +1,54 @@
+<?php
+session_start();
+
+// Vérifier si l'utilisateur est déjà connecté
+
+// Connexion à la base de données
+$servername = "mysql-quizlofl.alwaysdata.net";
+$username = "quizlofl";
+$password = "GC50TECH";
+$dbname = "quizlofl_rrr";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérifier la connexion
+if ($conn->connect_error) {
+    die("Échec de la connexion : " . $conn->connect_error);
+}
+
+// Vérifier si le formulaire de connexion a été soumis
+if(isset($_POST['email']) && isset($_POST['mdp'])) {
+    // Récupérer les données du formulaire
+    $email = $_POST['email'];
+    $password = $_POST['mdp'];
+
+    // Requête SQL pour vérifier l'existence de l'utilisateur
+    $sql = "SELECT * FROM USER WHERE email='$email'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // L'utilisateur existe, vérifier le mot de passe
+        $user = $result->fetch_assoc();
+        if (password_verify($password, $user['password'])) {
+            // Mot de passe correct, connecter l'utilisateur
+            $_SESSION['user_email'] = $user['email'];
+            // Récupérer le prénom de l'utilisateur
+            $prenom = $user['user']; // Récupérer le prénom en supposant que le nom complet est stocké dans le champ 'user'
+            // Stocker le prénom dans la session
+            $_SESSION['prenom'] = $prenom;
+            // Rediriger vers la page d'accueil
+            header("Location: $_SERVER[HTTP_REFERER]");
+            exit();
+        } else {
+            // Mot de passe incorrect
+            $error = "Mot de passe incorrect";
+        }
+    } else {
+        // Utilisateur non trouvé
+        $error = "Utilisateur non trouvé";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <header>
@@ -12,28 +63,56 @@
 
 <body>
     <header role="header">
-        <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-
-        <img src="Logo.svg" alt="logo" class="logo">
+        <div class="haut"><a href="aa.php" id="accueil"><img src="Logo.svg" alt="logo" class="logo" id="logo"></a>
+        <img src="Burger.svg" alt="menu" class="burger" id="burger"></div>
         <nav class="menu" role="navigation">
             <div class="header-text">
                 <a href='news.php'>NEWS</a>
                 <div class="ligne-verticale"></div>
                 <a href='news.php'>NOS EXPERIENCES</a>
                 <div class="ligne-verticale"></div>
-                <a href='news.php'>A PROPOS DE NOUS</a>
+                <a href='news.php'>À PROPOS DE NOUS</a>
                 <div class="ligne-verticale"></div>
-                <a href='news.php'>NOS EQUIPEMENTS</a>
+                <a href='equipement.php'>NOS EQUIPEMENTS</a>
                 <div class="ligne-verticale"></div>
-                <a href='news.php' class="bold" id="bold">MON COMPTE</a>
+                <a class="bold" id="bold" onclick="openPopup()">MON COMPTE</a>
             </div>
-            <ul class="menu">
-            </ul>
         </nav>
     </header>
+
+    <?php
+// Vérifier si l'utilisateur est connecté
+if(isset($_SESSION['prenom'])) {
+    // Récupérer le prénom de l'utilisateur depuis la session
+    $prenom = $_SESSION['prenom'];
+    // Afficher le message de bienvenue avec le prénom de l'utilisateur
+    echo "<nav class='pop-up' role='connexion' id='pop-up'>
+            Bonjour, $prenom <a href='../deconnexion.php'>Déconnexion</a>
+        </nav>";
+
+} else {
+    // Afficher la fenêtre contextuelle de connexion si l'utilisateur n'est pas connecté
+?>
+    <nav class="pop-up" role="connexion" id="pop-up">
+        <div class="text" id="text">
+            <button class='accept-button' onclick="closePopup()">❌</button>
+            <h2>CONNEXION</h2>
+            <form method="post" action="">
+                <div class="espace"><p>Identifiant</p> <input type="email"  name="email" required></div>
+                <div class="espace"><p>Mot de passe</p> <input type="password" name="mdp" required></div>
+                <label for="remember_me">Se souvenir de moi 
+                    <input type="checkbox" id="remember_me" name="remember_me" value="1">
+                </label><br>
+                <div class="espace"><a href="Nouveau dossier/creation.php" id="Creer">Créer un compte</a>
+                <button type="submit" id="conn-button">Connexion</button></div>
+            </form>
+            <?php if(isset($error)) { echo "<p>$error</p>"; } ?>
+        </div>
+    </nav>
+    <?php } ?>
     <h1>NOS EQUIPEMENTS</h1> 
             
-            <button><a href="">Découvrir</a></button>
+            <button class="button"><a href="">Découvrir</a></button>
 
             <div class="DESCRIPTION">
                 <img class="fond" src="design/Ellipse 36.svg" alt="">
@@ -117,28 +196,40 @@
                 Le taux satisfaction de nos clients concernant nos outils d’immersion est de 90%. 
                 </p>
 
-                <div class="GALERIE">
-                      
-                    <div class="C">
-                            <p class="com">
-                        “C’est dingue, j’ai vraiment eu l’impression d’être transporté dans un autre monde. Avant je ne faisais pas d’expérience VR car je ne croyais pas en la 
-                        qualité mais grâce à The Sense, j’ai pu traverser la frontière du réel.”<br>
-                                - Denise, 23 Octobre 2020 - 
-                        </p> 
-                    </div>
-                    <img class="Cercle1" src="design/Cercle 1.svg" alt="">
-                    <img class="Cercle2" src="design/Cercle 2.svg" alt="">
+                <div  class="GALERIE">
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="design/Rectangle 94.svg" alt="Image 1">
+                <img src="design/image 130.svg" alt="Image 2">
+                <img src="design/image 129.svg" alt="Image 3">
+                <img src="design/image 128.svg" alt="Image 4">
+                <img src="design/image 127.svg" alt="Image 5">
+            </div>
+        </div>
 
-                    
-                    <img class="Rectangle1" src="design/Rectangle 129.svg" alt="">
-                    <img class="Rectangle2" src="design/Rectangle 129.svg" alt="">
-                    <img class="Rectangle3" src="design/Rectangle 129.svg" alt="">
-                    <img class="Rectangle4" src="design/Rectangle 129.svg" alt="">
-                    <img class="Rectangle5" src="design/Rectangle 129.svg" alt="">
-                    <img class="Rectangle6" src="design/Rectangle 129.svg" alt="">
 
-                </div>
+        <div>
+            <button onclick="previousSlide()" class="gauche">
+                <img src="design/Cercle 1.svg" alt="Précédent">
+            </button>
+            <button onclick="nextSlide()" class="droite">
+                <img src="design/Cercle 2.svg" alt="Suivant">
+            </button>
+        </div>
 
+        <p class="com1">
+            “C’est dingue, j’ai vraiment eu l’impression d’être transporté dans un autre monde. Avant je ne faisais pas d’expérience VR car je ne croyais pas en la 
+            qualité mais grâce à The Sense, j’ai pu traverser la frontière du réel.”<br>
+                    - Denise, 23 Octobre 2020 - 
+        </p>
+        <p class="com2">
+            “Avec mes fils nous avons tenté l’expérience “NAMELESS”, moi qui pensais 
+            avoir tout vu dans le domaine de l’horreur, je ne me suis jamais autant 
+            trompé. Si vous êtes à la recherche de sensation forte et de frissons, 
+            la DARK ROOM est faite pour vous”<br>
+            - Nicolas, 3 Septembre 2020 -
+        </p>
+    </div>
             </div>
 
             <footer>
@@ -164,8 +255,7 @@
         </div>
 </footer>
     
-    <script>
-        function afficherEtLancer() {
+<script>function afficherEtLancer() {
     afficherPopup();
     var videoPlayer = document.getElementById("videoPlayer");
     videoPlayer.play();
@@ -180,7 +270,59 @@ function fermerPopup() {
     var popup = document.getElementById("popupVideo");
     popup.style.display = "none";
 }
-    </script>
+        function openPopup() {
+            var popup = document.getElementById("pop-up");
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("pop-up");
+            popup.style.display = "none";
+        }
+
+
+        
+        
+    const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel img');
+const com1 = document.querySelector('.com1');
+const com2 = document.querySelector('.com2');
+
+let currentIndex = 0;
+let currentComment = 1; // Variable pour suivre l'état actuel du commentaire affiché
+const totalImages = images.length;
+
+function updateCarousel() {
+    const itemWidth = images[0].clientWidth;
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+function updateComments() {
+    // Alternance entre com1 et com2 en fonction de la valeur de currentComment
+    if (currentComment === 1) {
+        com1.style.display = 'block';
+        com2.style.display = 'none';
+    } else {
+        com1.style.display = 'none';
+        com2.style.display = 'block';
+    }
+}
+
+function previousSlide() {
+    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+    currentComment = currentComment === 1 ? 2 : 1; // Changement de commentaire
+    updateCarousel();
+    updateComments(); // Mettre à jour l'affichage des commentaires
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalImages;
+    currentComment = currentComment === 1 ? 2 : 1; // Changement de commentaire
+    updateCarousel();
+    updateComments(); // Mettre à jour l'affichage des commentaires
+}
+
+</script>
 </body>
 
 </html>
